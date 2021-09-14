@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/aexel90/hue_exporter/metric"
+	"github.com/7wmr/hue_exporter/metric"
 	hueAPI "github.com/amimof/huego"
 )
 
