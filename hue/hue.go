@@ -205,7 +205,7 @@ func collectLights(bridge *hueAPI.Bridge) (lightData []map[string]interface{}, e
 		result[labelStateOn] = light.State.On
 		result[labelStateAlert] = light.State.Alert
 		result[labelStateBri] = light.State.Bri
-		result[labelStateBriPercent] = (light.State.Bri / 254) * 100
+		result[labelStateBriPercent] = "Test"
 		result[labelStateColorMode] = light.State.ColorMode
 		result[labelStateCT] = light.State.Ct
 		result[labelStateReachable] = light.State.Reachable
