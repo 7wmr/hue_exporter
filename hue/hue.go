@@ -37,6 +37,7 @@ const (
 	labelStateOn          = "state_on"
 	labelStateAlert       = "state_alert"
 	labelStateBri         = "state_bri"
+	labelStateBriPercent  = "state_bri_percent"
 	labelStateColorMode   = "state_color_mode"
 	labelStateCT          = "state_ct"
 	labelStateReachable   = "state_reachable"
@@ -203,7 +204,8 @@ func collectLights(bridge *hueAPI.Bridge) (lightData []map[string]interface{}, e
 		// State
 		result[labelStateOn] = light.State.On
 		result[labelStateAlert] = light.State.Alert
-		result[labelStateBri] = (light.State.Bri / 254) * 100
+		result[labelStateBri] = light.State.Bri
+		result[labelStateBriPercent] = (light.State.Bri / 254) * 100
 		result[labelStateColorMode] = light.State.ColorMode
 		result[labelStateCT] = light.State.Ct
 		result[labelStateReachable] = light.State.Reachable
