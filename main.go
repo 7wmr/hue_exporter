@@ -11,9 +11,9 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"github.com/aexel90/hue_exporter/collector"
-	"github.com/aexel90/hue_exporter/hue"
-	"github.com/aexel90/hue_exporter/metric"
+	"github.com/7wmr/hue_exporter/collector"
+	"github.com/7wmr/hue_exporter/hue"
+	"github.com/7wmr/hue_exporter/metric"
 )
 
 var (
