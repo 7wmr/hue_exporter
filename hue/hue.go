@@ -1,5 +1,5 @@
 package hue
-ERROR
+
 import (
 	"encoding/json"
 	"fmt"
